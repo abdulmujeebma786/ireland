@@ -266,7 +266,7 @@ h6 {
 #intro .carousel-fade .carousel-inner .active,
 #intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
 #intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
-  opacity: 1;
+  opacity: 0.5;
   transition: 0.5s;
 }
 
@@ -951,6 +951,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 #portfolio .portfolio-wrap {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
+  height: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
 }
 
 #portfolio .portfolio-wrap:hover {
@@ -1032,7 +1035,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
   text-align: center;
   padding: 30px;
-  /*height: 90px;*/
+  height: 100%;
   border-radius: 0 0 3px 3px;
 }
 
@@ -1520,6 +1523,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+
+.disp-flex { 
+  display: flex;
+}
+.mt-10 {
+  margin-top: 10px !important;
 }
 
 /*--------------------------------------------------------------
