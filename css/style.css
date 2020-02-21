@@ -232,11 +232,12 @@ h6 {
 #intro .carousel-content {
   text-align: center;
   position: absolute;
-  bottom: 32px;
+  /* bottom: 32px; */
 }
 
 #intro h2 {
-  color: #fff;
+  font-family: fantasy;
+  color: #f3f9ff;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
@@ -1586,5 +1587,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #mobile-nav-toggle {
     display: inline;
+  }
+
+  .sub-section-header{
+    bottom: 0px;
+    position: absolute;
   }
 }
