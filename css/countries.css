@@ -1,6 +1,6 @@
 html,
-body{
-  height: 100%  ;
+body {
+  height: 100%;
 }
 .countries {
   height: 100%;
@@ -19,5 +19,30 @@ body{
   width: 100%;
 }
 
+.countries #featured-services h2 {
+  margin: unset !important;
+  color: #fff;
+}
 
+.countries #countries .container {
+  padding: 20px 70px;
+}
 
+.countries #countries h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+.countries #countries h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 15px 0;
+}
+
+@media (max-width: 979px) {
+  .countries #countries .container {
+    padding: 20px !important;
+  }
+}

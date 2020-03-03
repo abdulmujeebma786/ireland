@@ -30,72 +30,113 @@
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/countries.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
   </head>
 
   <body>
     <!--==========================
     Header
   ============================-->
-  <div class="countries">
-    <header id="header">
-      <div class="container-fluid">
-        <div
-          id="logo"
-          style="height: 100%;text-align: center;"
-          class="pull-left"
-        >
-          <h1><a href="#intro" class="scrollto">Studie maven</a></h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="#intro" style=" height: 100%;"><img class="logo-img" src="img/logo1.png" alt="" title="" /></a> -->
+    <div class="countries">
+      <header id="header">
+        <div class="container-fluid">
+          <div
+            id="logo"
+            style="height: 100%;text-align: center;"
+            class="pull-left"
+          >
+            <h1><a href="#intro" class="scrollto">Studie maven</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="#intro" style=" height: 100%;"><img class="logo-img" src="img/logo1.png" alt="" title="" /></a> -->
+          </div>
+
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="menu-active"><a href="./index.html">Home</a></li>
+              <li><a href="#about">Why Studiemavens</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Courses</a></li>
+              <li><a href="#countries">COUNTRIES</a></li>
+              <li><a href="#team">Referral programme!</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- #nav-menu-container -->
         </div>
+      </header>
+      <!-- #header -->
 
-        <nav id="nav-menu-container">
-          <ul class="nav-menu">
-            <li class="menu-active"><a href="./index.html">Home</a></li>
-            <li><a href="#about">Why Studiemavens</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Courses</a></li>
-            <li><a href="#countries">COUNTRIES</a></li>
-            <li><a href="#team">Referral programme!</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- #nav-menu-container -->
-      </div>
-    </header>
-    <!-- #header -->
-
-    <!--==========================
+      <!--==========================
     Intro Section
-  ============================-->
-    <section id="intro">
-      <div class="intro-container" style="height: 100%;">
-        <div
-          id="introCarousel"
-          class="carousel  slide carousel-fade"
-          data-ride="carousel"
-          style="height: 100%;"
-        >
-          <!-- <ol class="carousel-indicators"></ol> -->
+    ============================-->
+      <section id="intro">
+        <div class="intro-container" style="height: 100%;">
+          <div
+            id="introCarousel"
+            class="carousel  slide carousel-fade"
+            data-ride="carousel"
+            style="height: 100%;"
+          >
+            <!-- <ol class="carousel-indicators"></ol> -->
 
-          <div class="carousel-inner" role="listbox" style="height: 100%;">
-            <div class="carousel-item active" style="height: 100%;">
-              <div class="carousel-background" style="height: 100%;">
-                <img src="img/countries.jpg" alt="" />
+            <div class="carousel-inner" role="listbox" style="height: 100%;">
+              <div class="carousel-item active" style="height: 100%;">
+                <div class="carousel-background" style="height: 100%;">
+                  <img src="img/countries.jpg" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <section id="featured-services" class="pt-15 pb-15">
+        <div class="container">
+          <div class="row just-center">
+            <h2><b>COUNTRIES</b></h2>
+          </div>
+        </div>
+      </section>
 
+      <section id="countries" class="section-bg wow fadeInUp">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-xs-5 col-sm-5 col-lg-5">
+              <img src="img/australia.jpg" class="w-100" />
+            </div>
+            <div class="col-md-7 col-xs-7 col-sm-7 col-lg-7">
+              <h3>Australia</h3>
+              <h4>There’s nothing like it!</h4>
+              <p>
+                Australia is the perfect place for you to settle down with your
+                education if you are looking for a cozy lifestyle. With more
+                than just nature to offer, Australia will get you whirled up
+                with its high end educational and career opportunities. As the
+                saying goes, there is absolutely nothing like it!
+              </p>
+            </div>
+          </div>
 
-
-
-
+          <div class="row">
+            <div class="col-md-7 col-xs-7 col-sm-7 col-lg-7">
+              <h3>Australia</h3>
+              <h4>There’s nothing like it!</h4>
+              <p>
+                Australia is the perfect place for you to settle down with your
+                education if you are looking for a cozy lifestyle. With more
+                than just nature to offer, Australia will get you whirled up
+                with its high end educational and career opportunities. As the
+                saying goes, there is absolutely nothing like it!
+              </p>
+            </div>
+            <div class="col-md-5 col-xs-5 col-sm-5 col-lg-5">
+              <img src="img/australia.jpg" class="w-100" />
+            </div>
+            
+          </div>
+        </div>
+      </section>
     </div>
-
 
     <!-- JavaScript Libraries -->
     <script src="lib/jquery/jquery.min.js"></script>
