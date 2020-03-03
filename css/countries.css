@@ -1,3 +1,7 @@
+html,
+body{
+  height: 100%  ;
+}
 .countries {
   height: 100%;
   width: 100%;
@@ -6,32 +10,14 @@
 .countries #intro {
   display: block;
   width: 100%;
-  height: calc(100vh - 44%);
+  height: calc(100vh - 50%);
   background: #fff;
-  position: absolute;
-  top: 72px;
 }
 
-.countries #intro .carousel-item {
-  width: 100%;
+.countries #intro .carousel-item .carousel-background img {
   height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.countries #intro .carousel-item .carousel-background {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.countries #intro .carousel-item  .carousel-background img {
-  object-fit: cover;
   width: 100%;
 }
 
-.countries .carousel-background::after {
-  background-color: rgba(0, 0, 0, 0.3);
-}
+
+
