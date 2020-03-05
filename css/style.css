@@ -45,6 +45,26 @@ h6 {
   padding: 0;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #42a5f5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #42a5f5;
+}
+
 /* Back to top button */
 
 .back-to-top {
@@ -138,7 +158,7 @@ h6 {
 }
 
 #header {
-  background: rgba(0, 0, 0, 0.9);
+  background:rgb(33, 150, 244);
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -398,7 +418,7 @@ h6 {
 
 .nav-menu li:hover > a,
 .nav-menu > .menu-active > a {
-  color: #42a5f5;
+  color: #002b64;
 }
 
 .nav-menu > li {
@@ -1107,10 +1127,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* countries Section
 --------------------------------*/
-
-#countries {
-  padding: 60px 0;
-}
 
 #countries .section-header {
   margin-bottom: 40px;
