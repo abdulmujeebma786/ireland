@@ -96,11 +96,11 @@ jQuery(document).ready(function($) {
     }
     $.ajax({
       type: "POST",
-      url: action,
+      url: "Api/App.php?status=mail&" + str,
       data: str,
       success: function(msg) {
         // alert(msg);
-        if (msg == 'OK') {
+        if (msg == 1) {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
