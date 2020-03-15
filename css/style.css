@@ -680,7 +680,67 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* About Us Section
 --------------------------------*/
+#why-studie-maven {
+    background: url(../img/maven-bg.jpg) center top no-repeat fixed;
+    background-size: cover;
+    padding: 60px;
+    position: relative;
+}
+#why-studie-maven .card {
+    background: #fafafa !important;
+    border: 5px solid #ebebeb;
+    margin: 12px;
+    padding: 25px 30px;
+    list-style: none;
+    width: 100%;
+    float: left;
+}
+#why-studie-maven .container {
+    position: relative;
+    z-index: 10;
+}
+#why-studie-maven .card p {
+  color: #000;
+}
+#why-studie-maven .card {
+  padding: 40px;
+}
+#why-studie-maven .card-body {
+  padding: 0;
+  margin-bottom: 20px;
+}
 
+#why-studie-maven .about-col {
+    background: #1565c0 !important;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+#why-studie-maven .about-col .img {
+    position: relative;
+}
+#why-studie-maven .about-col h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 40px 0 12px 0;
+    padding: 0 20px 0 20px;
+}
+
+#why-studie-maven .about-col .img img {
+    border-radius: 4px 4px 0 0 !important;
+    height: auto !important;
+}
+#why-studie-maven .about-col h2 a {
+    color: #fff;
+}
+#why-studie-maven .about-col p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #e3f2fd;
+    margin-bottom: 0;
+    padding: 0 20px 20px 20px;
+}
 #about {
   background: url("../img/about-bg.jpg") center top no-repeat fixed;
   background-size: cover;
