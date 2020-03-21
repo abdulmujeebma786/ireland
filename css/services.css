@@ -180,9 +180,11 @@ body {
 .services #services h4 {
   font-size: 14px;
   margin: 0px !important;
+  color: #000;
 }
 #services .description {
   margin-left: 0px !important;
+  color: #000;
 }
 
 #services .title span {
@@ -199,16 +201,18 @@ body {
   height: 310px !important;
 }
 #services {
-  padding: 0px;
+  padding: 30px;
 }
 
 .bg-primary {
-  background-color: #1565c0 !important;
+  background-color: #f1f0ed !important;
 }
 
 #services .card {
-  box-shadow: 0px 2px 5px #1976d2;
-  border: none;
+    box-shadow: 0px 2px 5px #a7a7a7;
+    border: none;
+    min-height: 300px;
+    overflow: auto;
 }
 
 @media (max-width: 979px) {
