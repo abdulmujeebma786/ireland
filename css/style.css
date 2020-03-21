@@ -423,7 +423,7 @@ h6 {
 
 .nav-menu li:hover > a,
 .nav-menu > .menu-active > a {
-  color: #000;
+  color: #f0ff03;
 }
 
 .nav-menu > li {
@@ -621,7 +621,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 0px;
   color: #333;
 }
-
+.section-header span {
+  margin-bottom: 20px;
+}
+.course-header h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 /* Section with background
 --------------------------------*/
 
@@ -1134,6 +1140,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
   margin-bottom: 18px;
   padding-bottom: 0;
+  text-align: left;
 }
 
 #portfolio .portfolio-item .portfolio-info h4 a {
@@ -1150,6 +1157,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #333;
   font-weight: 500;
   font-size: 14px;
+  text-align: left;
 }
 .course-header {
   padding-top: 40px;
@@ -1359,7 +1367,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact {
   padding: 60px 0;
-  margin-top: 80px;
 }
 
 #contact .contact-info {

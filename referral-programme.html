@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Studie Maven</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/countries.css" rel="stylesheet" />
+    <link href="css/services.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--==========================
+    Header
+  ============================-->
+    <div class="services">
+      <header id="header">
+        <div w3-include-html="header.html"></div>
+      </header>
+      <!-- #header -->
+
+      <!--==========================
+    Intro Section
+  ============================-->
+
+      <section id="intro">
+        <div class="intro-container" style="height: 100%;">
+          <div
+            id="introCarousel"
+            class="carousel  slide carousel-fade"
+            data-ride="carousel"
+            style="height: 100%;"
+          >
+            <!-- <ol class="carousel-indicators"></ol> -->
+
+            <div class="carousel-inner" role="listbox" style="height: 100%;">
+              <div class="carousel-item active" style="height: 100%;">
+                <div class="carousel-background" style="height: 100%;">
+                  <img src="img/Referral.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured-services" class="pt-15 pb-15">
+        <div class="container">
+          <div class="row just-center">
+            <h2><b>Referral Programme</b></h2>
+          </div>
+        </div>
+      </section>
+
+      <main id="main">
+        <!--==========================
+          Services Section
+        ============================-->
+        <section id="why-studie-maven">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 box wow bounceInUp card mb-3 p-20"
+                data-wow-duration="1.4s"
+              >
+              <div class="section-header wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                <h3>The Studie Maven Referral programme!</h3>
+                <p>
+                    Get to leverage a fair income with the Studie Maven Referral Initiative by helping us expand our overseas education across the globe.
+                    To know more details, <a href="#contact">contact us now</a></p>
+                     
+                     
+                    <p>(Business partner ) mention this part in the bottom of the first page </p>
+                     
+                    <p>University of applied sciences Europe <a href="https://www.ue-germany.com/" target="_blank">add logo</a> </p>
+                     
+                    <p style="margin-bottom: 0;">UE is one of the top ten reputed universities in Germany which is known for its quality of teaching. Our collaboration with UE enables a fast track application process for students who apply to UE compared to other consultancies.
+                </p>
+              </div>
+
+              </div>
+            </div>
+           
+          </div>
+        </section>
+        <!-- #services-->
+      </main>
+    </div>
+
+    <!-- <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script>
+      (function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                /*remove the attribute, and call this function once more:*/
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
