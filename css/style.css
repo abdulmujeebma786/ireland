@@ -1505,7 +1505,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #333;
+  background: #117ce6;
   color: #eee;
   line-height: 1;
   padding: 8px 0;
@@ -1712,4 +1712,17 @@ body.mobile-nav-active #mobile-nav-toggle {
     bottom: 0px;
     position: absolute;
   }
+  #why-studie-maven {
+    padding: 0;
+}
+#why-studie-maven .card {
+    padding: 20px;
+}
+.carousel-content img {
+  width: 75% !important;
+}
+#services {
+    padding: 10px;
+}
+
 }
