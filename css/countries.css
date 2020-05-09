@@ -166,10 +166,6 @@ body {
   color: #fff;
 }
 
-.countries #countries .container {
-  padding: 20px 250px !important;
-}
-
 .countries #countries h3 {
   font-size: 20px;
   font-weight: bold;
@@ -218,7 +214,5 @@ body {
   }
 }
 @media (min-width: 1200px) {
-  .countries #countries .container {
-    padding: 20px 250px !important;
-  }
+  
 }

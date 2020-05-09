@@ -167,6 +167,7 @@ h6 {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 #header #logo {
@@ -197,6 +198,57 @@ h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
+}
+.stamp-logo {
+    position: absolute;
+    left: 70px;
+    top: 60px;
+    width: 150px;
+    height: 250px;
+}
+.stamp-logo img {
+  width: 100%;
+  opacity: 0.8;
+  background: #fff;
+  border-radius: 50%;
+   box-shadow: 5px 10px 18px #888888;
+  }
+.green-btn {
+  background: #9ae412;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #FFF;
+  margin-top: 10px;
+}  
+.pull-left {
+  float: left;
+}
+.m-t-10 {
+  margin-top: 10px;
+}
+.m-b-10 {
+  margin-bottom: 10px;
+}
+.m-l-10 {
+  margin-left: 10px;
+}
+.m-r-10 {
+  margin-right: 10px;
+}
+.img-box {
+  float: left;
+  width: 100%;
+  background: blue;
+}
+.img-box img {
+  width: 100% !important;
+  height: auto !important;
+}
+.txt-align-left {
+  text-align: left !important;
+}
+.align-left, .align-left p, .align-left h3 {
+  text-align: left !important;
 }
 
 /*--------------------------------------------------------------
