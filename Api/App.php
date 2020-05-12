@@ -19,23 +19,23 @@ switch($status)
         $i = 0;
         $name = $_REQUEST['name'];
         $email = $_REQUEST['email'];
-        $phone = $_REQUEST['subject'];
+        $subject = $_REQUEST['subject'];
+        $phone = $_REQUEST['phone'];
         $message = $_REQUEST['message'];
         $random_hash = md5(date('r', time()));
         $from = $email;
         $headers  = "From:info@studiemaven.com\nReply-To:info@studiemavens.com";
         // $content = "testing";
-        $to = "abdulmujeebma786@gmail.com";
-        $subject ="new contact";
+        $to = "admissions@studiemaven.com";
         $content    ='<body style="background-color: white;padding-top: 30px;    font-family: serif;">
                         <div style=" margin: 1%;height: auto;background-color: #c3c3c3;    padding-bottom: 37px;">
                             <div style="height: 22px;"></div>
                             <div style="text-align: center">
-                                <img src="http://http://studiemaven.com/Api/Assets/logo.png">
+                                <img src="http://studiemaven.com/img/main-logo.png" style="width: 22%;">
                             </div>
                             <div>
                                 <h1 style="text-align: center"> <b>Contact for enquiry : '.$name.'</b></h1>
-                                <h3 align="center">Email :'.$email.'<br> Phone : '.$phone.'<br>Message : '.$message.'</h3>
+                                <h3 align="center">Email :'.$email.'<br> Phone : '.$phone.'<br>Subject : '.$subject.'<br>Message : '.$message.'</h3>
                             </div>
                         </div>
                     </body>';

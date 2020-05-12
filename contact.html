@@ -29,6 +29,18 @@
 
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <script>
+    function getmap(){
+      var mapProp= {
+        center:new google.maps.LatLng(9.9816,76.2999),
+        zoom:5,
+        disableDefaultUI: true
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    
+    </script>
   </head>
 
   <body>
@@ -106,83 +118,89 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:info@example.com">admissions@sudiemaven.com</a></p>
+              <p><a href="mailto:info@example.com">admissions@studiemaven.com</a></p>
             </div>
           </div>
         </div>
-
         <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars"
+                  />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="Your Email"
+                    data-rule="email"
+                    data-msg="Please enter a valid email"
+                  />
+                  <div class="validation"></div>
+                </div>
+              </div>
+              <div class="form-row">
               <div class="form-group col-md-6">
                 <input
                   type="text"
-                  name="name"
                   class="form-control"
-                  id="name"
-                  placeholder="Your Name"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
                   data-rule="minlen:4"
-                  data-msg="Please enter at least 4 chars"
+                  data-msg="Please enter at least 8 chars of subject"
                 />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-6">
                 <input
-                  type="email"
+                  type="number"
                   class="form-control"
-                  name="email"
-                  id="email"
-                  placeholder="Your Email"
-                  data-rule="email"
-                  data-msg="Please enter a valid email"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone Number"
+                  data-rule="minlen:4"
+                  data-msg="Please enter valid phone number"
                 />
                 <div class="validation"></div>
               </div>
-            </div>
-            <div class="form-row">
-            <div class="form-group col-md-6">
-              <input
-                type="text"
-                class="form-control"
-                name="subject"
-                id="subject"
-                placeholder="Subject"
-                data-rule="minlen:4"
-                data-msg="Please enter at least 8 chars of subject"
-              />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group col-md-6">
-              <input
-                type="Phone"
-                class="form-control"
-                name="subject"
-                id="subject"
-                placeholder="Phone Number"
-                data-rule="minlen:4"
-                data-msg=""
-              />
-              <div class="validation"></div>
-            </div>
-           </div>
-            <div class="form-group">
-              <textarea
-                class="form-control"
-                name="message"
-                rows="5"
-                data-rule="required"
-                data-msg="Please write something for us"
-                placeholder="Message"
-              ></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center">
-              <button type="submit">Send Message</button>
-            </div>
-          </form>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="5"
+                  data-rule="required"
+                  data-msg="Please write something for us"
+                  placeholder="Message"
+                ></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+
+
+           <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" style="margin-top: 43px;
+            border: 1px solid #d2cdcd;" src="https://maps.google.com/maps?q=%20Jacob's%20DD%20Mall&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/nordvpn-coupon-code/">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;}</style></div>
+
         </div>
+        
       </div>
     </section>
 
@@ -208,7 +226,7 @@
             <div class="col-lg-4 col-md-4 contact-info">
               <p>
                 <strong>Phone:</strong> +91 9061379595<br>
-                <strong>Email:</strong> admissions@sudiemaven.com<br>
+                <strong>Email:</strong> admissions@studiemaven.com<br>
               </p>
             </div>
             <div class="col-lg-4 col-md-4 contact-info">
@@ -249,12 +267,15 @@
     <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_yvyV9OZBro1N9e3QAJYi4RAvl16-NYM&callback=getmap"></script>
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
 
     <script>
       (function includeHTML() {
+
+         
+
         var z, i, elmnt, file, xhttp;
         /*loop through a collection of all HTML elements:*/
         z = document.getElementsByTagName("*");
@@ -285,6 +306,8 @@
           }
         }
       })();
+      
+      
     </script>
   </body>
 </html>
